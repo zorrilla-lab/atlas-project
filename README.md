@@ -7,6 +7,20 @@ The goal of this project is to recreate the functionality of the <a href="https:
 * Discovering coexpressed genes after selecting genes of interest
 * Exploring what cell types are expressed
 
+## Install
+### Dependencies
+* Docker
+
+### Build
+In your terminal, go to your preferred directory and clone the repo:
+```git clone https://github.com/zorrilla-lab/atlas-project.git```
+
+Install the package requirements:
+```
+cd atlas-project
+docker compose up --build
+```
+
 ## Resources
 
 https://alleninstitute.github.io/abc_atlas_access/intro.html
