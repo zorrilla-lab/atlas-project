@@ -6,12 +6,14 @@ RUN apt-get update && apt-get install -y git && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
 
+# install dependencies
 COPY requirements.txt .
-
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Copy the rest of your project files
+# copy project files
 COPY . .
 
-# replace later with main script, e.g. CMD ["python", "main.py"]
-CMD ["python"]
+EXPOSE 5000
+
+CMD ["python", "scripts/setup.py"]
+CMD ["flask", "run", "--host=0.0.0.0"]
