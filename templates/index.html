@@ -4,14 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>atlas project</title>
+  <icon></icon>
   <script type="module" src="{{ url_for('static', filename='js/main.js') }}"></script>
 </head>
 <body>
   <span>html file</span>
-  <select id="gene-of-interest-dropdown">
-    <option>htr7</option>
-    <option>rgs7bp</option>
+
+  <select id="dataset-dropdown">
+    <option value="" selected disabled hidden>Choose an option</option>
+    <option value="Zhuang-ABCA-1">Zhuang-ABCA-1</option>
+    <option value="Zhuang-ABCA-2">Zhuang-ABCA-2</option>
+    <option value="Zhuang-ABCA-3">Zhuang-ABCA-3</option>
+    <option value="Zhuang-ABCA-4">Zhuang-ABCA-4</option>
   </select>
-  <span id="gene-of-interest-name">htr7</span>
+
+  <!-- change to input eventually -->
+  <select id="gene-of-interest-dropdown">
+    <option value="" selected disabled hidden>Choose an option</option>
+    <option value="Htr7">Htr7</option>
+    <option value="Rgs7bp">Rgs7bp</option>
+  </select>
+  
+  <div id="visualization"></div>
 </body>
 </html>

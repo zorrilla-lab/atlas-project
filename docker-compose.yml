@@ -5,7 +5,8 @@ services:
     build: .
     ports:
       - "5000:5000"
-    # volumes:
-    #   - wherever the data is
+    volumes:
+      - .:/app
+      - .data:/app/data # already included in previous volume, but for redundance
 
 # if we use a database, then we would add it as another service, with flask depending on said service
