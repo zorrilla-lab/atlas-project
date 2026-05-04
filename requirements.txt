@@ -1,0 +1,9 @@
+abc_atlas_access @ git+https://github.com/alleninstitute/abc_atlas_access.git@c23bb010c9bee8796489a49cdbf1209e77e61c92
+anndata
+argparse
+matplotlib
+numpy
+pandas
+pathlib
+scipy
+tqdm
