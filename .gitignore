@@ -1,0 +1,11 @@
+# Environment and data
+/atlas_env/
+/data/
+
+# Jupyter Notebooks
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+test*.ipynb
+
+# Python bytecode
+__pycache__/
